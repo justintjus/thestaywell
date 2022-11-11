@@ -11,6 +11,7 @@ header{
     position:fixed;
     top:0;
     width:100%;
+    z-index: 1;
 }
 
 body{
@@ -101,7 +102,13 @@ a:hover{
 .logo a{
     font-size:20px;
 }
-
+.footer {
+    margin-top: 20%;
+}
+a:hover {
+    color: #ffff;
+    text-decoration: none;
+}
 /* Mobile Menu */
 .menu{
     display: flex;
@@ -178,12 +185,17 @@ a:hover{
         border:1px solid #006d6d;
         border-radius:50em;
     }
-    .hero-button{
+        .hero-button {
+            margin-top: 40px;
+            justify-content: center;
+            align-items: center;
+        }
+    .hero-button a.item-button {
         text-decoration: none;
-        padding:7px 15px 7px 15px;
-        background:#008080;
-        border:1px solid black;
-        border-radius:50em;
+        padding: 7px 15px 7px 15px;
+        background: #008080;
+        border: 0;
+        border-radius: 50em;
     }
     .button a:hover{
         transition:all .25s;
@@ -219,13 +231,13 @@ a:hover{
         padding-right:0;
     }
 }
-
+/* 
 .slider{
     width: 800px;
     height: 500px;
     border-radius: 10px;
     overflow: hidden;
-}
+} */
 
 .slides{
     width: 500%;
@@ -237,9 +249,14 @@ a:hover{
     display: none;
 }
 
-.slide{
-    width: 20%;
+.slide {
+    /* width: 20%; */
     transition: 2s;
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 auto;
 }
 
 .slide img{
