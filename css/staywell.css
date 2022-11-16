@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
 
 *{
     box-sizing: border-box;
@@ -17,10 +18,11 @@ header{
 }
 
 body{
-    background: #000;
+    background: #000000;
+    text-rendering: optimizeSpeed;
 }
 nav{
-    background:#222;
+    background:#000000;
     padding:0px 20px;
 }
 li.logo img {
@@ -34,8 +36,7 @@ li.logo img {
     left: 0;
     transform: translate (-75%, -75%);
     width: 100%;
-    background-color: #cccccc;
-    background-image: linear-gradient(rgb(0, 140, 255),rgb(0, 255, 213));
+    background-color: #990000;
 }
 
 .container span{
@@ -50,7 +51,7 @@ li.logo img {
     font-weight: 700;
     letter-spacing: 8px;
     margin-bottom: 20px;
-    background: black;
+    background: #000000;
     position: relative;
     animation: text 3s 1;
 }
@@ -88,7 +89,7 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    background:#23E3C9
+    background:#000000;
 }
 
 a{
@@ -124,9 +125,22 @@ a:hover{
     text-align: center;
 }
 a:hover {
-    color: #ffff;
+    color: #green;
     text-decoration: none;
 }
+
+.bg-neutral-900 {
+    background-color: var(--clr-neutral-900);
+  }
+
+.text-neutral-100 {
+    color: var(--clr-neutral-100);
+  }
+
+  .padding-block-700 {
+    padding-block: var(--size-700);
+  }
+
 /* Mobile Menu */
 .menu{
     display: flex;
@@ -186,7 +200,7 @@ a:hover {
 .hero-button a.item-button {
     text-decoration: none;
     padding: 10px 20px 10px 20px;
-    background: #008080;
+    background: #990000;
     border: 0;
     border-radius: 50em;
     text-transform: uppercase;
@@ -194,16 +208,18 @@ a:hover {
 }
 .photo-gallery-title {
     padding: 30px 0;
-    background: #4fe3c9;
+    background: #000000;
     text-align: center;
     justify-content: center;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .photo-gallery-title h1 {
     font-size: 40px;
     line-height: 30px;
     margin-bottom: 0;
+    font-family: Dancing Script;
+    font-color: #FFFFFF;
 }
 
 section.gallery-section {
@@ -225,7 +241,7 @@ section.gallery-section {
     height: 40px;
     background: transparent no-repeat center center;
     background-size: 100% 100%;
-    background-color: #29316a;
+    background-color: #380000;
     border-radius: 7px;
 }
 
@@ -255,15 +271,15 @@ section.gallery-section {
     .button a{
         text-decoration: none;
         padding:7px 15px;
-        background:#008080;
-        border:1px solid #006d6d;
+        background:#FFFFFF;
+        border:1px solid #380000;
         border-radius:50em;
     }
         
         .hero-button a.item-button {
             text-decoration: none;
             padding: 10px 20px 10px 20px;
-            background: #008080;
+            background: #FFFFFF;
             border: 0;
             border-radius: 50em;
             text-transform: uppercase;
@@ -271,8 +287,8 @@ section.gallery-section {
         }
     .button a:hover{
         transition:all .25s;
-        background:#006d6d;
-        border-color:#008080;
+        background: green;
+        border-color:green;
     }
 }
 
@@ -347,7 +363,7 @@ section.gallery-section {
 }
 
 .manual-btn{
-    border: 2px solid #40D3DC;
+    border: 2px solid #000000;
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
@@ -359,7 +375,7 @@ section.gallery-section {
 }
 
 .manual-btn:hover{
-    background:#40D3DC
+    background:#000000;
 }
 
 #radio1:checked ~ .first{
@@ -393,7 +409,7 @@ section.gallery-section {
 }
 
 .navigation-auto div{
-    border: 2px solid #40D3DC;
+    border: 2px solid #000000;
     padding: 5px;
     border-radius: 10px;
     transition: 1s;
@@ -404,26 +420,26 @@ section.gallery-section {
 }
 
 #radio1:checked ~ .navigation-auto .auto-btn1{
-    background:#40D3DC;
+    background:#000000;
 }
 #radio2:checked ~ .navigation-auto .auto-btn2{
-    background:#40D3DC;
+    background:#000000;
 }
 #radio3:checked ~ .navigation-auto .auto-btn3{
-    background:#40D3DC;
+    background:#000000;
 }
 #radio4:checked ~ .navigation-auto .auto-btn4{
-    background:#40D3DC;
+    background:#000000;
 }
 #radio5:checked ~ .navigation-auto .auto-btn5{
-    background:#40D3DC;
+    background:#000000;
 }
 #radio6:checked ~ .navigation-auto .auto-btn6{
-    background:#40D3DC;
+    background:#000000;
 }
 
 .contactme-container {
-    background: #29326a;
+    background: #990000;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -447,7 +463,7 @@ section.gallery-section {
     font-size: 40px;
     line-height: 30px;
     margin-bottom: 0;
-    text-decoration: underline;
+    text-decoration: none;
 }
 .contact-box {
     width: 50%;
@@ -457,14 +473,14 @@ section.gallery-section {
 .contact-box button.btn.btn-primary {
     text-decoration: none;
     padding: 10px 20px 10px 20px;
-    background: #008080;
+    background: #000000;
     border: 0;
     border-radius: 50em;
     text-transform: uppercase;
     display: inline-block;
 }
 .footer-container {
-    background: #1b1b27;
+    background: #000000;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -555,3 +571,4 @@ li.toggle {
     font-size: 30px;
 }
 }
+Footer
